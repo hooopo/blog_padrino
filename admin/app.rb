@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Admin < Padrino::Application
   use ActiveRecord::ConnectionAdapters::ConnectionManagement
   register Padrino::Rendering
@@ -33,7 +34,8 @@ class Admin < Padrino::Application
   end
 
   access_control.roles_for :admin do |role|
-    role.project_module :accounts, '/accounts'
+    role.project_module :posts, '/posts'
+    # role.project_module :accounts, '/accounts'
   end
 
   breadcrumbs = Padrino::Helpers::Breadcrumb.new

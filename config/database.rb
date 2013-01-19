@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 ##
 # You can use other adapters like:
 #

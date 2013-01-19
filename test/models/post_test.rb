@@ -1,9 +1,9 @@
 # -*- encoding : utf-8 -*-
 require File.expand_path(File.dirname(__FILE__) + '/../test_config.rb')
 
-describe "Account Model" do
+describe "Post Model" do
   it 'can construct a new instance' do
-    @account = Account.new
-    refute_nil @account
+    @post = Post.new
+    refute_nil @post
   end
 end

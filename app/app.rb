@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Blog < Padrino::Application
   use ActiveRecord::ConnectionAdapters::ConnectionManagement
   register Padrino::Rendering
@@ -8,6 +9,10 @@ class Blog < Padrino::Application
 
   get "/" do
     render :index
+  end
+
+  get :about, :map => "/about_us" do
+    "This a blog of mine." 
   end
 
   ##

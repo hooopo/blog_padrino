@@ -1,0 +1,11 @@
+<div class="post">
+  <div class="title">
+  	<%= link_to @post.title, url_for(:posts, :show, :id => @post)%>
+  </div>
+  <div class="date">
+  	<%= time_ago_in_words(@post.created_at || Time.now) + " ago"%>
+  </div>
+  <div class="body">
+  	<%= @post.body %>
+  </div>
+</div>

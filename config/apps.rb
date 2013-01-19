@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 ##
 # This file mounts each app in the Padrino project to a specified sub-uri.
 # You can mount additional applications using any of these commands below:
@@ -26,8 +27,8 @@
 # override these settings in the subapps as needed.
 #
 Padrino.configure_apps do
-  # enable :sessions
-  set :session_secret, '942f4556948e884460c65e93c27fd1646902f2dcbedc3bb4554ae4a1aaecf834'
+	# enable :sessions
+	set :session_secret, '942f4556948e884460c65e93c27fd1646902f2dcbedc3bb4554ae4a1aaecf834'
 end
 
 # Mounts the core application for this project
