@@ -7,14 +7,6 @@ class Blog < Padrino::Application
 
   enable :sessions
 
-  get "/" do
-    render :index
-  end
-
-  get :about, :map => "/about_us" do
-    "This a blog of mine." 
-  end
-
   ##
   # Caching support
   #

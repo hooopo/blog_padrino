@@ -37,8 +37,8 @@
         <tr>
           <td> <%= check_box_tag 'post_ids[]', :value => post.id %> </td>
           <td> <%= post.id %> </td>
-          <td> <%= post.title %> </td>
-          <td> <%= post.body %> </td>
+          <td> <%=h post.title %> </td>
+          <td> <%=h post.body %> </td>
           <td> <%= time_ago_in_words post.created_at %></td>
           <td> <%= time_ago_in_words post.updated_at %></td>
           <td class="action">

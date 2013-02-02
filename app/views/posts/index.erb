@@ -1,5 +1,27 @@
-<ul>
-  <% @posts.each do |post| %>
-    <li><%= link_to post.title, url_for(:posts, :show, :id => post)%></li>
+<section id="articles">
+  <% @posts[0...3].each do |post| %>
+    <article class="post">
+      <header>
+        <h1><%= link_to post.title, url(:posts, :show, :id => post.id)%></h1>
+        <span class="date"><%= post.created_at %></span>
+      </header>
+
+      <section class="content">
+        <%= post.body %>
+      </section>
+      <div class="more"><%= link_to "read on »", url(:posts, :show, :id => post.id)%></div>
+    </article>
+  <% end %>
+</section>
+
+<section id="archives">
+	<h1>Archives</h1>
+	<% if @posts[3..-1] %>
+  <% @posts[3..-1].each do |post| %>
+	<li>
+		<%= link_to post.title, url(:posts, :show, :id => post.id)%>
+	</li>
+	<% end %> 
 	<% end %>
-</ul>
+</section>
+
