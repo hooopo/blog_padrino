@@ -1,0 +1,13 @@
+zh_cn:
+  models:
+    account:
+      name: "帐户"
+      attributes:
+        id: Id
+        name: "名"
+        surname: "姓"
+        email: "邮箱"
+        crypted_password: "加密密码"
+        role: "角色"
+        created_at: "创建时间"
+        updated_at: "更新时间"

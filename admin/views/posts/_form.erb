@@ -4,22 +4,20 @@
   <%= f.label :title, :class => 'control-label' %>
   <div class='controls'>
     <%= f.text_field :title, :class => 'input-xxlarge' %>
-    <span class='help-inline'> Ex: a simple text</span>
   </div>
 </fieldset>
 <fieldset class='control-group'>
   <%= f.label :body, :class => 'control-label' %>
   <div class='controls'>
-    <%= f.text_area :body, :class => 'input-xxlarge' %>
-    <span class='help-inline'> Ex: a simple text</span>
+    <%= f.text_area :body, :class => 'input-xxlarge', :rows => 20, :cols => 20 %>
   </div>
 </fieldset>
 
 
 <div class="actions">
-  <%= f.submit 'Save', :class => 'btn btn-primary' %>
+  <%= f.submit '保存', :class => 'btn btn-primary' %>
   &nbsp;
-  <%= f.submit 'Save and continue', :class => 'btn btn-info', :name => 'save_and_continue' %>
+  <%= f.submit '保存并继续', :class => 'btn btn-info', :name => 'save_and_continue' %>
   &nbsp;
-  <%= f.submit 'Cancel', :onclick => "window.location='#{url(:posts, :index)}';return false", :class => 'btn' %>
+  <%= f.submit '取消', :onclick => "window.location='#{url(:posts, :index)}';return false", :class => 'btn' %>
 </div>

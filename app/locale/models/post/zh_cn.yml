@@ -1,0 +1,10 @@
+zh_cn:
+  models:
+    post:
+      name: "博客"
+      attributes:
+        id: Id
+        title: "标题"
+        body: "内容"
+        created_at: "创建时间"
+        updated_at: "更新时间"
