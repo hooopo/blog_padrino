@@ -13,6 +13,7 @@ gem 'erubis', '~> 2.7.0'
 gem 'activerecord', :require => 'active_record'
 gem 'mysql2'
 gem 'html-pipeline', "~> 0.0.7"
+gem "html_truncator", "~>0.2"
 
 # Test requirements
 gem 'minitest', '~>2.6.0', :require => 'minitest/autorun', :group => 'test'

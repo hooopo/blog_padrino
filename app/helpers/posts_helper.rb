@@ -8,4 +8,8 @@ Blog.helpers do
   def readable_date(time)
     time.strftime("%Y年%m月%d日")
   end
+  
+  def truncate(text)
+    HTML_Truncator.truncate(text, 300, :length_in_chars => true, :ellipsis => " (truncated)").html_safe
+  end
 end
