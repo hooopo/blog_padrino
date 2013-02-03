@@ -79,9 +79,8 @@ body > header > h1 {
 .more a:hover { text-decoration: underline }
 body > header {
 	display: block;
-	padding-top: 30px;
-	line-height: 180px;
-	margin-bottom: 20px;
+	padding-top: 10px;
+	margin-bottom: 30px;
 }
 h1, h2, h3, h4 {
   display: inline;
