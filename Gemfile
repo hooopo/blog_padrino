@@ -12,6 +12,7 @@ gem 'bcrypt-ruby', :require => 'bcrypt'
 gem 'erubis', '~> 2.7.0'
 gem 'activerecord', :require => 'active_record'
 gem 'mysql2'
+gem 'html-pipeline', "~> 0.0.7"
 
 # Test requirements
 gem 'minitest', '~>2.6.0', :require => 'minitest/autorun', :group => 'test'
