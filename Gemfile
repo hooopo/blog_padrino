@@ -28,6 +28,7 @@ gem 'thin', :group => "development"
 
 group :production do
  gem 'pg'
+ gem 'thin'
 end
 
 # Or Individual Gems
