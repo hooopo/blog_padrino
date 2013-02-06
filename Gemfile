@@ -26,6 +26,10 @@ gem 'padrino', :git => 'git://github.com/padrino/padrino-framework.git'
 gem 'pry-padrino', :group => "development"
 gem 'thin', :group => "development"
 
+group :production do
+ gem 'pg'
+end
+
 # Or Individual Gems
 # %w(core gen helpers cache mailer admin).each do |g|
 #   gem 'padrino-' + g, '0.10.7'

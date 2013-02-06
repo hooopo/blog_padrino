@@ -14,6 +14,17 @@
 #     :socket    => '/tmp/mysql.sock'
 #   }
 #
+postgres = URI.parse(ENV['DATABASE_URL'] || '')
+
+ActiveRecord::Base.configurations[:production] = {
+  :adapter  => 'postgresql',
+  :encoding => 'utf8',
+  :database => postgres.path[1..-1], 
+  :username => postgres.user,
+  :password => postgres.password,
+  :host     => postgres.host
+}
+
 ActiveRecord::Base.configurations[:development] = {
   :adapter   => 'mysql2',
   :encoding  => 'utf8',
@@ -25,17 +36,6 @@ ActiveRecord::Base.configurations[:development] = {
   :host      => 'localhost',
 }
 
-ActiveRecord::Base.configurations[:production] = {
-  :adapter   => 'mysql2',
-  :encoding  => 'utf8',
-  :reconnect => true,
-  :database  => 'blog_production',
-  :pool      => 5,
-  :username  => 'root',
-  :password  => '123',
-  :host      => 'localhost',
-
-}
 
 ActiveRecord::Base.configurations[:test] = {
   :adapter   => 'mysql2',
