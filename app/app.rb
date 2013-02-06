@@ -23,6 +23,12 @@ class Blog < Padrino::Application
   #
   
   set :markdown_parser, HTML::Pipeline.new([HTML::Pipeline::MarkdownFilter])
+  
+  get "/" do
+    # root to /posts hacking.
+    request.env["PATH_INFO"] = "/posts"
+    call(request.env)
+  end
 
   ##
   # Application configuration options
