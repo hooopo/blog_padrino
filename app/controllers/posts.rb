@@ -19,7 +19,7 @@ Blog.controllers :posts do
   #   'Hello world!'
   # end
   
-  get :index do
+  get :index, :provides => [:html, :atom] do
     @posts = Post.all(:order => "created_at desc")
     render "posts/index"
   end
