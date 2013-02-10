@@ -4,7 +4,9 @@
     <link rel="stylesheet" type="text/css" href="/stylesheets/application.css">
 		<link rel="stylesheet" type="text/css" href="/stylesheets/ie.css">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
-    <title>Blog</title>
+    <title>
+    	<%= content_for?(:title) ? yield_content(:title) : "Hooopo's Blog" %>
+    </title>
 		<style>
 		      body > header {
 		        font-family: 'Myriad Pro', Arial, sans-serif;
