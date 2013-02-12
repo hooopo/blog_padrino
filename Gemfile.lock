@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/padrino/padrino-framework.git
-  revision: aa3617ce79639fbee9869dc2073f8a918d682066
+  revision: da0d53e6acc777b92460969c4d7c28b22e367588
   specs:
     padrino (0.10.7)
       padrino-admin (= 0.10.7)
@@ -74,7 +74,7 @@ GEM
     method_source (0.8.1)
     mime-types (1.21)
     minitest (2.6.2)
-    multi_json (1.5.0)
+    multi_json (1.5.1)
     mysql2 (0.3.11)
     nokogiri (1.5.6)
     pg (0.14.1)
