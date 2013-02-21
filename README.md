@@ -11,3 +11,5 @@
 3. heroku rake ar:migrate
 4. heroku rake seed
 5. heroku config:set session_secret=xxxxxx
+
+## test
