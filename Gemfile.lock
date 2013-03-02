@@ -32,7 +32,7 @@ GIT
       padrino-core (= 0.10.7)
 
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     activemodel (3.2.11)
       activesupport (= 3.2.11)
